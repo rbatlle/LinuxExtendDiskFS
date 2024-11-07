@@ -14,7 +14,7 @@ fdisk /dev/sda
 <h4>Secuencia a seguir</h4>
 
 ```
-d --> Eliminamos la particion actual de 25GB (NO se eliminan datos)
+d --> Eliminamos la particion actual de 20GB (NO se eliminan datos)
 ```
 
 ```
