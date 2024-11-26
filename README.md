@@ -1,7 +1,7 @@
 # LinuxExtendDiskFS 
-#### Tenemos un disco unico de 20GB en Linux y queremos ampliarlo a 40GB.
+#### Tenemos un disco de 20GB y queremos ampliarlo a X capacidad.
 
-## 1. Comprobar el tipo de filesystem que utiliza la particion ya existente (xfs, ext)
+## 1. Comprobar el fs de la partición actual (xfs, ext)
 ```
 df -Th  /dev/sda1
 ```
@@ -22,7 +22,7 @@ n --> Creamos una nueva particion
 ```
 
 ```
-Primary --> Tipo de Particion Primary o Extended
+Primary --> Tipo de Particion (Primary o Extended)
 ```
 
 ```
@@ -40,8 +40,7 @@ w --> Guardar los cambios y salir de fdisk
 reboot
 ```
 
-## 3. Maquina ya arrancada
-
+## 3. Maquina iniciada ya arrancada
 ```
 xfs_growfs /
 ```
